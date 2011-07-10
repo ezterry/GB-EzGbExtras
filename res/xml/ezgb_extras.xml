@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Note portions of this file are copied from SpareParts Part
+ * of the Android Open Source Project
+ *
+ * Copyright 2011, Terrence Ezrol (ezGingerbread Project)
+ * Copyright 2008, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/spareparts">
+        <ListPreference
+                android:key="window_animations"
+                android:title="@string/title_window_animations"
+                android:summary="@string/summary_window_animations"
+                android:entries="@array/entries_animations"
+                android:entryValues="@array/entryvalues_animations"
+                android:dialogTitle="@string/dialog_title_window_animations" />
+
+        <ListPreference
+                android:key="transition_animations"
+                android:title="@string/title_transition_animations"
+                android:summary="@string/summary_transition_animations"
+                android:entries="@array/entries_animations"
+                android:entryValues="@array/entryvalues_animations"
+                android:dialogTitle="@string/dialog_title_transition_animations" />
+        <ListPreference
+                android:key="end_button"
+                android:title="@string/title_end_button"
+                android:summary="@string/summary_end_button"
+                android:entries="@array/entries_end_button"
+                android:entryValues="@array/entryvalues_end_button"
+                android:dialogTitle="@string/dialog_title_end_button" />
+
+        <CheckBoxPreference 
+            android:key="haptic_feedback" 
+            android:title="@string/title_haptic_feedback" 
+            android:summaryOn="@string/summary_on_haptic_feedback"
+            android:summaryOff="@string/summary_off_haptic_feedback"/>
+
+        <CheckBoxPreference
+                android:key="compatibility_mode"
+                android:title="@string/compatibility_mode_title"
+                android:summaryOn="@string/compatibility_mode_summary_on"
+                android:summaryOff="@string/compatibility_mode_summary_off" />
+    </PreferenceCategory>
+</PreferenceScreen>
