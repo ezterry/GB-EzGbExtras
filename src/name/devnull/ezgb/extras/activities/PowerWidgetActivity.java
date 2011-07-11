@@ -19,7 +19,7 @@ package name.devnull.ezgb.extras.activities;
 
 import com.android.internal.telephony.Phone;
 import name.devnull.ezgb.extras.R;
-import name.devnull.ezgb.utils.PowerWidgetUtil;
+import name.devnull.ezgb.extras.utils.PowerWidgetUtil;
 
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;

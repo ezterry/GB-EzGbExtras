@@ -26,10 +26,10 @@
         <PreferenceScreen
             android:key="ui_power_widget_settings_menu"
             android:title="@string/title_expanded_widget"
-            android:summary="@string/summary_expanded_wdget">
+            android:summary="@string/summary_expanded_widget">
             <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="name.devnull.extras"
-                android:targetClass="name.devnull.extras.activities.UIPowerWidgetActivity" />
+                android:targetPackage="name.devnull.ezgb.extras"
+                android:targetClass="name.devnull.ezgb.extras.activities.UIPowerWidgetActivity" />
         </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory

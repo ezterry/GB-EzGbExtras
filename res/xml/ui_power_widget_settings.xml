@@ -21,14 +21,14 @@
 		<PreferenceScreen android:key="widget_picker"
 			android:title="@string/title_widget_picker" android:summary="@string/summary_widget_picker">
 			<intent android:action="android.intent.action.MAIN"
-				android:targetPackage="com.android.settings"
-				android:targetClass="com.android.settings.activities.PowerWidgetActivity" />
+				android:targetPackage="name.devnull.ezgb.extras"
+				android:targetClass="name.devnull.ezgb.extras.activities.PowerWidgetActivity" />
 		</PreferenceScreen>
 		<PreferenceScreen android:key="widget_order"
 			android:title="@string/title_widget_order" android:summary="@string/summary_widget_order">
 			<intent android:action="android.intent.action.MAIN"
-				android:targetPackage="com.android.settings"
-				android:targetClass="com.android.settings.activities.PowerWidgetOrderActivity" />
+				android:targetPackage="name.devnull.ezgb.extras"
+				android:targetClass="name.devnull.ezgb.extras.activities.PowerWidgetOrderActivity" />
 		</PreferenceScreen>
 	</PreferenceCategory>
 
