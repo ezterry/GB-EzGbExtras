@@ -33,27 +33,27 @@ import java.util.HashMap;
  * SystemUI PACKAGE.
  */
 public class PowerWidgetUtil {
-    public static final String BUTTON_WIFI = "toggleWifi";
-    public static final String BUTTON_GPS = "toggleGPS";
-    public static final String BUTTON_BLUETOOTH = "toggleBluetooth";
-    public static final String BUTTON_BRIGHTNESS = "toggleBrightness";
-    public static final String BUTTON_SOUND = "toggleSound";
-    public static final String BUTTON_SYNC = "toggleSync";
-    public static final String BUTTON_WIFIAP = "toggleWifiAp";
-    public static final String BUTTON_SCREENTIMEOUT = "toggleScreenTimeout";
-    public static final String BUTTON_MOBILEDATA = "toggleMobileData";
-    public static final String BUTTON_LOCKSCREEN = "toggleLockScreen";
-    public static final String BUTTON_NETWORKMODE = "toggleNetworkMode";
-    public static final String BUTTON_AUTOROTATE = "toggleAutoRotate";
-    public static final String BUTTON_AIRPLANE = "toggleAirplane";
-    public static final String BUTTON_FLASHLIGHT = "toggleFlashlight";
-    public static final String BUTTON_SLEEP = "toggleSleepMode";
-    public static final String BUTTON_MEDIA_PLAY_PAUSE = "toggleMediaPlayPause";
-    public static final String BUTTON_MEDIA_PREVIOUS = "toggleMediaPrevious";
-    public static final String BUTTON_MEDIA_NEXT = "toggleMediaNext";
-    public static final String BUTTON_WIMAX = "toggleWimax";
+    public static final String BUTTON_WIFI = "wifi";
+    public static final String BUTTON_GPS = "gps";
+    public static final String BUTTON_BLUETOOTH = "bluetooth";
+    public static final String BUTTON_BRIGHTNESS = "brightness";
+    public static final String BUTTON_SOUND = "sound";
+    public static final String BUTTON_SYNC = "sync";
+    public static final String BUTTON_WIFIAP = "wifiap";
+    public static final String BUTTON_SCREENTIMEOUT = "screentimeout";
+    public static final String BUTTON_MOBILEDATA = "mobiledata";
+    public static final String BUTTON_LOCKSCREEN = "lockscreen";
+    public static final String BUTTON_NETWORKMODE = "networkmode";
+    public static final String BUTTON_AUTOROTATE = "autorotate";
+    public static final String BUTTON_AIRPLANE = "airplane";
+    public static final String BUTTON_FLASHLIGHT = "flashlight";
+    public static final String BUTTON_SLEEP = "sleep";
+    public static final String BUTTON_MEDIA_PLAY_PAUSE = "media_play_pause";
+    public static final String BUTTON_MEDIA_PREVIOUS = "media_previous";
+    public static final String BUTTON_MEDIA_NEXT = "media_next";
 
     public static final HashMap<String, ButtonInfo> BUTTONS = new HashMap<String, ButtonInfo>();
+
     static {
         BUTTONS.put(BUTTON_AIRPLANE, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_AIRPLANE, R.string.title_toggle_airplane, "com.android.systemui:drawable/stat_airplane_on"));
@@ -91,8 +91,6 @@ public class PowerWidgetUtil {
                 BUTTON_MEDIA_PLAY_PAUSE, R.string.title_toggle_media_play_pause, "com.android.systemui:drawable/stat_media_play"));
         BUTTONS.put(BUTTON_MEDIA_NEXT, new PowerWidgetUtil.ButtonInfo(
                 BUTTON_MEDIA_NEXT, R.string.title_toggle_media_next, "com.android.systemui:drawable/stat_media_next"));
-        BUTTONS.put(BUTTON_WIMAX, new PowerWidgetUtil.ButtonInfo(
-                BUTTON_WIMAX, R.string.title_toggle_wimax, "com.android.systemui:drawable/stat_wimax_on"));
     }
 
     private static final String BUTTON_DELIMITER = "|";
