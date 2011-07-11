@@ -22,6 +22,16 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
+        android:title="@string/displayparts">
+        <PreferenceScreen
+            android:key="ui_power_widget_settings_menu"
+            android:title="@string/title_expanded_widget">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="name.devnull.extras"
+                android:targetClass="name.devnull.extras.activities.UIPowerWidgetActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
         android:title="@string/spareparts">
         <ListPreference
                 android:key="window_animations"
