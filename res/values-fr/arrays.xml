@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Note portions of this file are copied from SpareParts Part
+ * of the Android Open Source Project
+ *
+ * Copyright 2011, Terrence Ezrol (ezGingerbread Project)
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+    <string-array name="entries_animations">
+        <item>Eteint</item>
+        <item>Rapide</item>
+        <item>Normale</item>
+        <item>Lent</item>
+        <item>Très lent</item>
+    </string-array>
+
+    <string-array name="entries_font_size">
+        <item>Extremement Petit</item>
+        <item>Très Petit</item>
+        <item>Petit</item>
+        <item>Normale</item>
+        <item>Grand</item>
+        <item>Très Grand</item>
+        <item>Extremement Grand</item>
+    </string-array>
+
+    <string-array name="entries_end_button">
+        <item>Rien</item>
+        <item>Retour au Home</item>
+        <item>Mettre en Veille</item>
+        <item>Home, puis Veille</item>
+    </string-array>
+
+   <string-array name="entries_brightness_widget">
+        <item>Auto/Faible/40%%/100%%</item>
+        <item>Auto/Faible/25%%/50%%/75%%/100%%</item>
+        <item>Auto/25%%/100%%</item>
+        <item>Faible/100%%</item>
+    </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>2G/3G+2G</item>
+        <item>2G/3G Uniquement</item>
+        <item>2G/3G Uniquement/3G+2G</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget">
+        <item>Sons+Vibreur/Vibreur</item>
+        <item>Sons/Vibreur</item>
+        <item>Sons/Silencieux</item>
+        <item>Sons+Vib/Vib/Silencieux</item>
+        <item>Sons/Vibreur/Silencieux</item>
+        <item>Sons+Vibreur/Sons/Vibreur/Silencieux</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>Elevé / Mortel</item>
+    </string-array>
+</resources>

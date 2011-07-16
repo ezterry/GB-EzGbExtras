@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Note portions of this file are copied from SpareParts Part
+ * of the Android Open Source Project
+ *
+ * Copyright 2011, Terrence Ezrol (ezGingerbread Project)
+ * Copyright (C) 2007 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ -->
+<resources>
+    <string name="app_name">Extras EzGingerbread</string>
+    <string name="displayparts">Afficher les rêglages avancés:</string>
+    <string name="spareparts">Rêglages avancés:</string>
+
+    <!--Begin Spare Parts strings-->
+     <string name="title_window_animations">Animations des fenêtres</string>
+    <string name="summary_window_animations">Vitesse des animations dans les fenêtres individuelles</string>
+    <string name="dialog_title_window_animations">Choisir la vitesse de la fenêtre</string>
+
+    <string name="title_transition_animations">Animations de transition</string>
+    <string name="summary_transition_animations">Vitesse des animations entre écrans</string>
+    <string name="dialog_title_transition_animations">Choisir la vitesse de transition</string>
+
+    <string name="title_fancy_ime_animations">Animations fantaisistes</string>
+    <string name="summary_on_fancy_ime_animations">Utiliser des animations plus fantaisistes pour les fenêtres d\'entrée</string>
+    <string name="summary_off_fancy_ime_animations">Utiliser des animations normales pour les fenêtres d\'entrée</string>
+
+    <string name="title_haptic_feedback">Retour Haptique</string>
+    <string name="summary_on_haptic_feedback">Utiliser le retour haptique avec l\'interface utilisateur</string>
+    <string name="summary_off_haptic_feedback">Ne pas utiliser le retour haptique avec l\'interface utilisateur</string>
+
+    <string name="title_end_button">Comportement du bouton Fin</string>
+    <string name="summary_end_button">Choisir l\'action du bouton Fin (Rouge)</string>
+    <string name="dialog_title_end_button">Choisir le bouton Fin</string>
+
+    <string name="applications_title">Applications</string>
+
+    <!-- Sons & display settings screen, compatibility mode check box label -->
+    <string name="compatibility_mode_title">Mode de Compatibilité</string>
+    <!-- Sons & display settings screen, compatibility mode option summary text when check box is selected -->
+    <string name="compatibility_mode_summary_on">Lancer les application plus anciennes en mode de Compatibilité. Celà nécessite un redémarrage. </string>
+    <!-- Sons & display settings screen, compatibility mode option summary text when check box is clear -->
+    <string name="compatibility_mode_summary_off">Ne pas lancer les application plus anciennes en mode de Compatibilité. Celà nécessite un redémarrage.  </string>
+
+    <!-- End Spare Parts Strings-->
+
+    <!--Strings for PowerWidgets-->
+    <string name="general_title">Général</string>
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">Widget à Vue étendue</string>
+    <string name="title_expanded_widget">Configurer le PowerWidget</string>
+    <string name="summary_expanded_widget">Configurer le power widget étendu</string>
+    <string name="title_expanded_hide_onchange">Cacher lors des modifications</string>
+    <string name="summary_expanded_hide_onchange">Fermer les notifications après avoir actionné un bouton du Widget</string>
+    <string name="title_expanded_hide_scrollbar">Cacher la barre de défilement</string>
+    <string name="summary_expanded_hide_scrollbar">Cacher la barre de défilement lorsqu\'il y a plus de Widget que possible.</string>
+    <string name="expanded_color_mask">Couleur de l\'indicateur</string>
+    <string name="title_widget_picker">Boutons du widget</string>
+    <string name="summary_widget_picker">Choisir les boutons du widget</string>
+    <string name="title_widget_order">Ordre des boutons du widget</string>
+    <string name="summary_widget_order">Ordonnez vos boutons de widget</string>
+    <string name="title_buttons">Boutons</string>
+    <string name="title_toggle_wifi">Activer le Wifi</string>
+    <string name="title_toggle_bluetooth">Activer le Bluetooth</string>
+    <string name="title_toggle_gps">Activer le GPS</string>
+    <string name="title_toggle_Sons">Activer les Sons</string>
+    <string name="title_toggle_brightness">Rêgler la Luminosité</string>
+    <string name="title_toggle_sync">Activer la Synchronisation</string>
+    <string name="title_toggle_wifiap">Activer le point d\'accès Wifi</string>
+    <string name="title_toggle_screentimeout">Rêgler le délai d\'extinction de l\'écran</string>
+    <string name="title_toggle_mobiledata">Activer les connections de données mobiles</string>
+    <string name="title_toggle_lockscreen">Activer l\'écran de verrouillage</string>
+    <string name="title_toggle_networkmode">Activer 2G/3G</string>
+    <string name="title_toggle_autorotate">Switch d\'Orientation</string>
+    <string name="title_toggle_airplane">Activer le mode Avion</string>
+    <string name="title_toggle_flashlight">Activer le flash LED</string>
+    <string name="title_toggle_sleep">Mettre en veille</string>
+    <string name="title_toggle_media_play_pause">Lecteur de Media: Lecture/Pause</string>
+    <string name="title_toggle_media_previous">Lecteur de Media: Précédent</string>
+    <string name="title_toggle_media_next">Lecteur de Media: Suivant</string>
+    <string name="title_toggle_wimax">Activer le WiMAX</string>
+    <string name="title_button_modes">Fonctionnement des boutons</string>
+    <string name="pref_brightness_mode_title">Modes de luminosités</string>
+    <string name="pref_brightness_mode_summary">Choisir comment le bouton de luminosité change de mode</string>
+    <string name="pref_network_mode_title">Modes réseau</string>
+    <string name="pref_network_mode_summary">Choisir comment le bouton 2G/3G affecte le fonctionnoement</string>
+    <string name="pref_screentimeout_mode_title">Modes d\'extinction d\'écran</string>
+    <string name="pref_screentimeout_mode_summary">Choisir comment le bouton de délai d\'extinction d\'écran fonctionne</string>
+    <string name="pref_ring_mode_title">Modes sonores</string>
+    <string name="pref_ring_mode_summary">Chosir comment le bouton de modes sonores fonctionne</string>
+    <string name="pref_flash_mode_title">Mode de flash</string>
+    <string name="pref_flash_mode_summary">Choisir entre Elevé / Mortel (Evo)</string>
+    <!--End Power Widgets-->
+</resources>
+
