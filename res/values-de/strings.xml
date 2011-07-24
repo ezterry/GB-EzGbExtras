@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Note portions of this file are copied from SpareParts Part
+ * of the Android Open Source Project
+ *
+ * Copyright 2011, Terrence Ezrol (ezGingerbread Project)
+ * Copyright 2008, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<resources>
+    <string name="app_name">EzGingerbread Extras</string>
+    <string name="displayparts">Display Adv. Parts:</string>
+    <string name="spareparts">Spare Parts:</string>
+
+    <!--Begin Spare Parts strings-->
+    <string name="title_window_animations">Fensteranimationen</string>
+    <string name="summary_window_animations">Geschwindigkeit der Animationen</string>
+    <string name="dialog_title_window_animations">Auswahl der Fenstergeschwindigkeit</string>
+
+    <string name="title_transition_animations">Bewegungsanimationen</string>
+    <string name="summary_transition_animations">Geschwinigkeit beim Bildschirmwechsel</string>
+    <string name="dialog_title_transition_animations">Auswahl der Animationsgeschwindigkeit</string>
+
+    <string name="title_fancy_ime_animations">Eingabeanimationen</string>
+    <string name="summary_on_fancy_ime_animations">Besondere Eingabeanimationen verwenden</string>
+    <string name="summary_off_fancy_ime_animations">Einfache Eingabeanimationen verwenden</string>
+
+    <string name="title_haptic_feedback">Haptisches Feedback</string>
+    <string name="summary_on_haptic_feedback">Haptisches Feedback bei Benutzeraktionen</string>
+    <string name="summary_off_haptic_feedback">Kein haptisches Feedback bei Benutzeraktionen</string>
+
+    <string name="title_end_button">Ende-Button Verhalten</string>
+    <string name="summary_end_button">Verhalten bei Auswahl des Ende-Buttons</string>
+    <string name="dialog_title_end_button">Auswahl des Verhaltens</string>
+
+    <string name="applications_title">Applikationen</string>
+
+    <!-- Sound & display settings screen, compatibility mode check box label -->
+    <string name="compatibility_mode_title">Kompatibilitätsmodus</string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is selected -->
+    <string name="compatibility_mode_summary_on">Ältere Applikationen im Kompatibilitäsmodus ausführen. (Erfordert Neustart.)</string>
+    <!-- Sound & display settings screen, compatibility mode option summary text when check box is clear -->
+    <string name="compatibility_mode_summary_off">Ältere Applikationen nicht im Kompatibilitäsmodus ausführen. (Erfordert Neustart.)</string>
+
+    <!-- End Spare Parts Strings-->
+
+    <!--Strings for PowerWidgets-->
+    <string name="general_title">Allgemein</string>
+
+    <!-- Expanded View Power Widget -->
+    <string name="title_widget_buttons">PowerWidget</string>
+    <string name="title_expanded_widget">PowerWidget konfigurieren</string>
+    <string name="summary_expanded_widget">Konfiguration des PowerWidget</string>
+    <string name="title_expanded_hide_onchange">Schließen nach Änderung</string>
+    <string name="summary_expanded_hide_onchange">Schließen das Pulldown Menu nach Änderung</string>
+    <string name="title_expanded_hide_scrollbar">Scrollbar verstecken</string>
+    <string name="summary_expanded_hide_scrollbar">Verstecke die Scrollbaro, wenn mehr als die maximale Anzahl von Buttons angezeigt werden.</string>
+    <string name="expanded_color_mask">Farbindikator</string>
+    <string name="title_widget_picker">Widget Buttons</string>
+    <string name="summary_widget_picker">Auswahl der Widgetbuttons</string>
+    <string name="title_widget_order">Reihenfolge der Widgetbuttons</string>
+    <string name="summary_widget_order">Reihenfolgeder Widgetbuttons festlegen</string>
+    <string name="title_buttons">Buttons</string>
+    <string name="title_toggle_wifi">Wifi</string>
+    <string name="title_toggle_bluetooth">Bluetooth</string>
+    <string name="title_toggle_gps">GPS</string>
+    <string name="title_toggle_sound">Sound</string>
+    <string name="title_toggle_brightness">Helligkeit</string>
+    <string name="title_toggle_sync">Synchronisation</string>
+    <string name="title_toggle_wifiap">Wifi AP</string>
+    <string name="title_toggle_screentimeout">Bildschirm Timeout</string>
+    <string name="title_toggle_mobiledata">Mobile Daten</string>
+    <string name="title_toggle_lockscreen">Lockscreen</string>
+    <string name="title_toggle_networkmode">2G/3G</string>
+    <string name="title_toggle_autorotate">Drehen der Anzeige</string>
+    <string name="title_toggle_airplane">Flugzeugmodus</string>
+    <string name="title_toggle_flashlight">LED Taschenlampe</string>
+    <string name="title_toggle_sleep">Ruhemodus</string>
+    <string name="title_toggle_media_play_pause">Media: Play/Pause</string>
+    <string name="title_toggle_media_previous">Media: Vorheriger Titel</string>
+    <string name="title_toggle_media_next">Media: Nächster Titel</string>
+    <string name="title_toggle_wimax">WiMAX</string>
+    <string name="title_button_modes">Buttonverhalten</string>
+    <string name="pref_brightness_mode_title">Helligkeitsmodi</string>
+    <string name="pref_brightness_mode_summary">Verhalten des Helligkeitsbuttons</string>
+    <string name="pref_network_mode_title">Netzwerkemodi</string>
+    <string name="pref_network_mode_summary">Verhalten des Netzwerkbuttons</string>
+    <string name="pref_screentimeout_mode_title">Modi für Bildschirm-Timeout</string>
+    <string name="pref_screentimeout_mode_summary">Verhalten des Bildschirm-Timeout Buttons</string>
+    <string name="pref_ring_mode_title">Soundmodi</string>
+    <string name="pref_ring_mode_summary">Verhalten des Soundbuttons</string>
+    <string name="pref_flash_mode_title">Taschenlampenmodus</string>
+    <string name="pref_flash_mode_summary">Auswahl High / Death Ray (Evo)</string>
+    <!--End Power Widgets-->
+</resources>
