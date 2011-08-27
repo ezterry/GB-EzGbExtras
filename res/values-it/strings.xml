@@ -24,8 +24,8 @@
     <string name="spareparts">Spare Parts:</string>
 
     <!--Begin Spare Parts strings-->
-     <string name="title_window_animations">Animazioni finiestre </string>
-    <string name="summary_window_animations">Velocità di animazioni nelle singole finestre</string>
+     <string name="title_window_animations">Animazioni finestre </string>
+    <string name="summary_window_animations">Velocità di animazioni singole finestre</string>
     <string name="dialog_title_window_animations">Seleziona velocità finestre</string>
 
     <string name="title_transition_animations">Animazione di transizione</string>
@@ -56,13 +56,13 @@
     <!-- End Spare Parts Strings-->
 
     <!--Strings for PowerWidgets-->
-    <string name="general_title">Comune</string>
+    <string name="general_title">Impostazioni globali</string>
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Espandi il widget</string>
     <string name="title_expanded_widget">Configura widget risparmio energetico</string>
-    <string name="summary_expanded_widget">Configura dimensione widget risparmio energetico</string>
-    <string name="title_expanded_hide_onchange">Nascondi cambiamento</string>
+    <string name="summary_expanded_widget">Configura tasti widget risparmio energetico</string>
+    <string name="title_expanded_hide_onchange">Nascondi barra</string>
     <string name="summary_expanded_hide_onchange">Ritira barra scorrevole delle notifiche dopo aver premuto un tasto del widget</string>
     <string name="title_expanded_hide_scrollbar">Ritira barra</string>
     <string name="summary_expanded_hide_scrollbar">Ritira barra scorrevole quando i pulsanti del widget raggiungono il numero massimo.</string>
