@@ -22,6 +22,14 @@
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
+        android:title="@string/kernelparts">
+        <CheckBoxPreference
+            android:key="ksmenable_toggle"
+            android:title="@string/title_ksmenable_toggle"
+            android:summaryOn="@string/summaryon_ksmenable_toggle"
+            android:summaryOff="@string/summary_ksmenable_toggle"/>
+    </PreferenceCategory>
+    <PreferenceCategory
         android:title="@string/displayparts">
         <PreferenceScreen
             android:key="ui_power_widget_settings_menu"

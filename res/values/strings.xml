@@ -105,4 +105,9 @@
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray (Evo)</string>
     <!--End Power Widgets-->
+    <!-- Kernel Parts strings -->
+    <string name="kernelparts">Kernel Parts</string>
+    <string name="title_ksmenable_toggle">Use KSM Module</string>
+    <string name="summary_ksmenable_toggle">Kernel SamePage Merging</string>
+    <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging</string>
 </resources>
