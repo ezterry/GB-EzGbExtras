@@ -75,7 +75,6 @@
     <string name="title_toggle_wifi">Activer le Wifi</string>
     <string name="title_toggle_bluetooth">Activer le Bluetooth</string>
     <string name="title_toggle_gps">Activer le GPS</string>
-    <string name="title_toggle_Sons">Activer les Sons</string>
     <string name="title_toggle_brightness">Rêgler la Luminosité</string>
     <string name="title_toggle_sync">Activer la Synchronisation</string>
     <string name="title_toggle_wifiap">Activer le point d\'accès Wifi</string>
