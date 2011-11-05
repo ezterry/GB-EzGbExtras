@@ -105,9 +105,12 @@
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray (Evo)</string>
     <!--End Power Widgets-->
-    <!-- Kernel Parts strings -->
-    <string name="kernelparts">Kernel Parts</string>
+    <!-- performance settings -->
+    <string name="perfctl_title">Performance Settings:</string>
+    <string name="dialog_compcache_memctl_state">Compcache (zRam)</string>
+    <string name="title_compcache_size">Compcache RAM Usage</string>
+    <string name="summary_compcache_size">Compressed ram for increased virtual ram</string>
     <string name="title_ksmenable_toggle">Use KSM Module</string>
-    <string name="summary_ksmenable_toggle">Kernel SamePage Merging</string>
-    <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging</string>
+    <string name="summary_ksmenable_toggle">Kernel SamePage Merging to save true ram</string>
+    <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging to save true ram</string>
 </resources>

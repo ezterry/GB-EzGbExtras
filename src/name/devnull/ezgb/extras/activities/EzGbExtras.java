@@ -37,6 +37,7 @@ import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceGroup;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
@@ -47,6 +48,7 @@ import android.view.IWindowManager;
 
 import name.devnull.ezgb.extras.R;
 
+import java.io.File;
 import java.util.List;
 
 public class EzGbExtras extends PreferenceActivity
@@ -61,6 +63,8 @@ public class EzGbExtras extends PreferenceActivity
     private static final String KEY_COMPATIBILITY_MODE = "compatibility_mode";
     private static final String KEY_KSM_ENABLE_PREF = "ksmenable_toggle";
 
+    private static final String KEY_COMPCACHE = "persist_system_compcache";
+
     private final Configuration mCurConfig = new Configuration();
 
     private ListPreference mWindowAnimationsPref;
@@ -68,6 +72,7 @@ public class EzGbExtras extends PreferenceActivity
     private CheckBoxPreference mFancyImeAnimationsPref;
     private CheckBoxPreference mHapticFeedbackPref;
     private ListPreference mEndButtonPref;
+    private ListPreference mCompCache;
     private CheckBoxPreference mCompatibilityMode;
     private CheckBoxPreference mKSMEnable;
 
@@ -98,6 +103,8 @@ public class EzGbExtras extends PreferenceActivity
         mKSMEnable = (CheckBoxPreference) prefSet.findPreference(KEY_KSM_ENABLE_PREF);
         mKSMEnable.setChecked(SystemProperties.get("persist.sys.ksmenable","0").equals("1"));
         getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
+        mCompCache = (ListPreference) prefSet.findPreference(KEY_COMPCACHE);
+        mCompCache.setOnPreferenceChangeListener(this);
     }
 
     private void updateToggles() {
@@ -114,6 +121,8 @@ public class EzGbExtras extends PreferenceActivity
             writeAnimationPreference(1, objValue);
         } else if (preference == mEndButtonPref) {
             writeEndButtonPreference(objValue);
+        } else if (preference == mCompCache) {
+            writeCompCacheButtonPreference(objValue);
         }
         // always let the preference setting proceed.
         return true;
@@ -150,7 +159,16 @@ public class EzGbExtras extends PreferenceActivity
         } catch (NumberFormatException e) {
         }
     }
-    
+
+    public void writeCompCacheButtonPreference(Object objValue) {
+        try {
+            int val = Integer.parseInt(objValue.toString());
+            Settings.Secure.putInt(getContentResolver(), 
+                    Settings.Secure.ZRAM_SIZE, val);
+        } catch (NumberFormatException e) {
+        }
+    }
+
     int floatToIndex(float val, int resid) {
         String[] indices = getResources().getStringArray(resid);
         float lastVal = Float.parseFloat(indices[0]);
@@ -181,6 +199,37 @@ public class EzGbExtras extends PreferenceActivity
         }
     }
 
+    public void readCompCachePreference(ListPreference pref) {
+        int val;
+        int i;
+        if(SystemProperties.get("status.zram.device.exists","0")
+                           .equals("0")){
+            try{
+                getPreferenceScreen().removePreference(pref);
+                return;
+            } catch (Exception e) {
+            }
+        }
+        val = Settings.Secure.getInt(getContentResolver(),
+                                     Settings.Secure.ZRAM_SIZE, 0);
+        Log.i(TAG,"CC Read value: " + Integer.toString(val));
+        try{
+            String[] indices = getResources().getStringArray(R.array.entryvalues_compcache_size);
+            for (i=1; i<indices.length; i++) {
+                if(Integer.parseInt(indices[i]) == val){
+                    val=i;
+                    break;
+                }
+            }
+            if(i>=indices.length){
+                val=-1;
+            }
+            pref.setValueIndex(val);
+        } catch (ArrayIndexOutOfBoundsException e){
+            Log.w(TAG,"Invalid CompCache Size; ignoring");
+        }
+    }
+
     public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
         if (HAPTIC_FEEDBACK_PREF.equals(key)) {
             Settings.System.putInt(getContentResolver(),
@@ -198,6 +247,8 @@ public class EzGbExtras extends PreferenceActivity
         readAnimationPreference(1, mTransitionAnimationsPref);
         Log.i(TAG,"Resuming: Get End Button State");
         readEndButtonPreference(mEndButtonPref);
+        Log.i(TAG,"Update CompCache size");
+        readCompCachePreference(mCompCache);
         Log.i(TAG,"Resuming: Get Toggle states");
         updateToggles();
     }
