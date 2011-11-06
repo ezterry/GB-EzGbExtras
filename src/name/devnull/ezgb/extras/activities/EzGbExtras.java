@@ -44,6 +44,7 @@ import android.provider.Settings;
 import android.provider.Settings.SettingNotFoundException;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 import android.view.IWindowManager;
 
 import name.devnull.ezgb.extras.R;
@@ -161,6 +162,14 @@ public class EzGbExtras extends PreferenceActivity
             Settings.System.putInt(getContentResolver(),
                      Settings.System.PHONE_FORCE_INCOMING_CALL_UI,
                      mCallTouchUI.isChecked() ? 1 : 0);
+
+            if(mCallTouchUI.isChecked() == false){
+                Context context = getApplicationContext();
+                Toast toast = Toast.makeText(context,
+                    context.getString(R.string.toast_reboot_required),
+                    Toast.LENGTH_SHORT);
+                toast.show();
+            }
         }
         return false;
     }
@@ -186,8 +195,14 @@ public class EzGbExtras extends PreferenceActivity
     public void writeCompCacheButtonPreference(Object objValue) {
         try {
             int val = Integer.parseInt(objValue.toString());
+            Context context = getApplicationContext();
+            Toast toast = Toast.makeText(context,
+                context.getString(R.string.toast_reboot_required),
+                Toast.LENGTH_SHORT);
+
             Settings.Secure.putInt(getContentResolver(), 
                     Settings.Secure.ZRAM_SIZE, val);
+            toast.show();
         } catch (NumberFormatException e) {
         }
     }

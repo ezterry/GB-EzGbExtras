@@ -117,4 +117,5 @@
     <string name="userntpd_summary">Run Busybox NTP Client for time correction</string>
     <string name="call_touchui_title">Incoming Call TouchUI</string>
     <string name="call_touchui_summary">Enable TouchUI on to answer incoming calls</string>
+    <string name="toast_reboot_required">The change will be applied on your next reboot.</string>
 </resources>
