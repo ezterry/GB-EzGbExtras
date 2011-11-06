@@ -31,6 +31,12 @@
                 android:targetPackage="name.devnull.ezgb.extras"
                 android:targetClass="name.devnull.ezgb.extras.activities.UIPowerWidgetActivity" />
         </PreferenceScreen>
+        <CheckBoxPreference
+            android:key="userntpd_toggle"
+            android:persistent="false"
+            android:title="@string/userntpd_title"
+            android:summaryOn="@string/userntpd_summary"
+            android:summaryOff="@string/userntpd_summary" />
     </PreferenceCategory>
     <PreferenceCategory android:key="performance_settings_category"
         android:title="@string/perfctl_title">

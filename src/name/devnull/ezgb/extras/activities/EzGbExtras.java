@@ -64,6 +64,7 @@ public class EzGbExtras extends PreferenceActivity
     private static final String KEY_KSM_ENABLE_PREF = "ksmenable_toggle";
 
     private static final String KEY_COMPCACHE = "persist_system_compcache";
+    private static final String KEY_USERNTPD = "userntpd_toggle";
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -75,6 +76,7 @@ public class EzGbExtras extends PreferenceActivity
     private ListPreference mCompCache;
     private CheckBoxPreference mCompatibilityMode;
     private CheckBoxPreference mKSMEnable;
+    private CheckBoxPreference mUserNTPd;
 
     private IWindowManager mWindowManager;
 
@@ -105,6 +107,8 @@ public class EzGbExtras extends PreferenceActivity
         getPreferenceScreen().getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
         mCompCache = (ListPreference) prefSet.findPreference(KEY_COMPCACHE);
         mCompCache.setOnPreferenceChangeListener(this);
+        mUserNTPd = (CheckBoxPreference) prefSet.findPreference(KEY_USERNTPD);
+        mUserNTPd.setChecked(SystemProperties.get("persist.sys.userntpd.enable","0").equals("1"));
     }
 
     private void updateToggles() {
@@ -112,6 +116,7 @@ public class EzGbExtras extends PreferenceActivity
                 getContentResolver(), 
                 Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
         mKSMEnable.setChecked(SystemProperties.get("persist.sys.ksmenable","0").equals("1"));
+        mUserNTPd.setChecked(SystemProperties.get("persist.sys.userntpd.enable","0").equals("1"));
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -138,6 +143,9 @@ public class EzGbExtras extends PreferenceActivity
         }
         else if(preference == mKSMEnable) {
             SystemProperties.set("persist.sys.ksmenable",mKSMEnable.isChecked() ? "1" : "0");
+        }
+        else if(preference == mUserNTPd) {
+            SystemProperties.set("persist.sys.userntpd.enable",mUserNTPd.isChecked() ? "1" : "0");
         }
         return false;
     }

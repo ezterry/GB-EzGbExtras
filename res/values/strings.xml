@@ -113,4 +113,6 @@
     <string name="title_ksmenable_toggle">Use KSM Module</string>
     <string name="summary_ksmenable_toggle">Kernel SamePage Merging to save true ram</string>
     <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging to save true ram</string>
+    <string name="userntpd_title">Busybox NTP Client</string>
+    <string name="userntpd_summary">Run Busybox NTP Client for time correction</string>
 </resources>
