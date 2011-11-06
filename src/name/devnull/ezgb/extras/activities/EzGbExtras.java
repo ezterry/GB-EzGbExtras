@@ -65,6 +65,7 @@ public class EzGbExtras extends PreferenceActivity
 
     private static final String KEY_COMPCACHE = "persist_system_compcache";
     private static final String KEY_USERNTPD = "userntpd_toggle";
+    private static final String KEY_CALL_TOUCHUI ="force_incoming_call_touchui";
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -77,6 +78,7 @@ public class EzGbExtras extends PreferenceActivity
     private CheckBoxPreference mCompatibilityMode;
     private CheckBoxPreference mKSMEnable;
     private CheckBoxPreference mUserNTPd;
+    private CheckBoxPreference mCallTouchUI;
 
     private IWindowManager mWindowManager;
 
@@ -109,6 +111,11 @@ public class EzGbExtras extends PreferenceActivity
         mCompCache.setOnPreferenceChangeListener(this);
         mUserNTPd = (CheckBoxPreference) prefSet.findPreference(KEY_USERNTPD);
         mUserNTPd.setChecked(SystemProperties.get("persist.sys.userntpd.enable","0").equals("1"));
+        mCallTouchUI = (CheckBoxPreference) prefSet.findPreference(
+                                                    KEY_CALL_TOUCHUI);
+        mCallTouchUI.setChecked(Settings.System.getInt(getContentResolver(),
+                                Settings.System.PHONE_FORCE_INCOMING_CALL_UI,0)
+                                == 1);
     }
 
     private void updateToggles() {
@@ -117,6 +124,9 @@ public class EzGbExtras extends PreferenceActivity
                 Settings.System.HAPTIC_FEEDBACK_ENABLED, 0) != 0);
         mKSMEnable.setChecked(SystemProperties.get("persist.sys.ksmenable","0").equals("1"));
         mUserNTPd.setChecked(SystemProperties.get("persist.sys.userntpd.enable","0").equals("1"));
+        mCallTouchUI.setChecked(Settings.System.getInt(getContentResolver(),
+                                Settings.System.PHONE_FORCE_INCOMING_CALL_UI,0)
+                                == 1);
     }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -146,6 +156,11 @@ public class EzGbExtras extends PreferenceActivity
         }
         else if(preference == mUserNTPd) {
             SystemProperties.set("persist.sys.userntpd.enable",mUserNTPd.isChecked() ? "1" : "0");
+        }
+        else if(preference == mCallTouchUI) {
+            Settings.System.putInt(getContentResolver(),
+                     Settings.System.PHONE_FORCE_INCOMING_CALL_UI,
+                     mCallTouchUI.isChecked() ? 1 : 0);
         }
         return false;
     }

@@ -32,6 +32,12 @@
                 android:targetClass="name.devnull.ezgb.extras.activities.UIPowerWidgetActivity" />
         </PreferenceScreen>
         <CheckBoxPreference
+            android:key="force_incoming_call_touchui"
+            android:persistent="false"
+            android:title="@string/call_touchui_title"
+            android:summaryOn="@string/call_touchui_summary"
+            android:summaryOff="@string/call_touchui_summary" />
+        <CheckBoxPreference
             android:key="userntpd_toggle"
             android:persistent="false"
             android:title="@string/userntpd_title"

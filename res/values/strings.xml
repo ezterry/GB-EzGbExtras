@@ -115,4 +115,6 @@
     <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging to save true ram</string>
     <string name="userntpd_title">Busybox NTP Client</string>
     <string name="userntpd_summary">Run Busybox NTP Client for time correction</string>
+    <string name="call_touchui_title">Incoming Call TouchUI</string>
+    <string name="call_touchui_summary">Enable TouchUI on to answer incoming calls</string>
 </resources>
