@@ -105,4 +105,19 @@
     <string name="pref_flash_mode_title">Taschenlampenmodus</string>
     <string name="pref_flash_mode_summary">Auswahl High / Death Ray (Evo)</string>
     <!--End Power Widgets-->
+    <!-- performance settings -->
+    <string name="perfctl_title">Performance Settings</string>
+    <string name="dialog_compcache_memctl_state">Compcache/Swap</string>
+    <string name="title_compcache_size">Verwendung von ZRAM / Compcache RAM</string>
+    <string name="summary_compcache_size">Komprimiere internen Speicher für höhere virtuelle Kapazität (Erfordert Neustart)</string>
+    <string name="toast_reboot_required">Die Änderung wird nach dem nächsten Neustart aktiviert.</string>
+    <!-- Performance Settings : KSM -->
+    <string name="title_ksmenable_toggle">KSM Modul nutzen</string>
+    <string name="summary_ksmenable_toggle">Kernel SamePage Merging um RAM zu sparen</string>
+    <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging um RAM zu sparen</string>
+    <!-- Performance Settings : NTPD -->
+    <string name="userntpd_title">Busybox NTP Client</string>
+    <string name="userntpd_summary">Starte Busybox NTP Client zur Zeitkorrektur</string>
+    <string name="call_touchui_title">Anruf Annehmen über TouchUI</string>
+    <string name="call_touchui_summary">Anrufannahme über TouchUI aktivieren</string>
 </resources>
