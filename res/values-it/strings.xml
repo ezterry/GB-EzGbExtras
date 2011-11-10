@@ -103,5 +103,16 @@
     <string name="pref_flash_mode_title">Mod. Torcia</string>
     <string name="pref_flash_mode_summary">Scegli fra Normale o Forte / Death Ray (Evo)</string>
     <!--End Power Widgets-->
+
+    <string name="perfctl_title">Impostazioni prestazioni:</string>
+    <string name="title_compcache_size">L\'uso di Compcache RAM</string>
+    <string name="summary_compcache_size">ram compressa per aumentare la ram virtuale</string>
+    <string name="title_ksmenable_toggle">Attiva KSM Module</string>
+    <string name="summary_ksmenable_toggle">Kernel SamePage Merging per risparmiare ram vera</string>
+    <string name="summaryon_ksmenable_toggle">Kernel SamePage Merging per risparmiare ram vera</string>
+    <string name="userntpd_summary">Lancia Busybox NTP Client per correzione del l\'orologgio</string>
+    <string name="call_touchui_title">Incoming Call TouchUI</string>
+    <string name="call_touchui_summary">Attiva TouchUI per rispondere a chiamate</string>
+    <string name="toast_reboot_required">Cambiamento é attiva dopo riavvio del telephono.</string>
 </resources>
 
