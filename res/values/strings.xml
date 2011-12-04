@@ -118,4 +118,25 @@
     <string name="call_touchui_title">Incoming Call TouchUI</string>
     <string name="call_touchui_summary">Enable TouchUI to answer incoming calls</string>
     <string name="toast_reboot_required">The change will be applied on your next reboot.</string>
+    <!-- cpuspeed (cpu freq) settings -->
+    <string name="cpufreq_header">CPU Speed:</string>
+    <string name="enable_cpufreq_title">CPU Speed Enabled</string>
+    <string name="cpufreq_menu">CPU Speeds</string>
+    <string name="summary_cpufreq_menu">Set CPU min/max speeds</string>
+    <string name="enable_cpufreq_summary">Automatic CPU Speed Adjustments enabled; disable before using third party apps for maintaining CPU speed</string>
+    <string name="reset_cpufreq_title">Reset CPU Settings</string>
+    <string name="reset_cpufreq_summary">Enable default CPU Speed settings based on kernel default speeds on next reboot</string>
+    <string name="cpufreq_current">Current CPU Speed:</string>
+    <string name="cpufreq_maxwake">CPU Max (screen on)</string>
+    <string name="cpufreq_maxsleep">CPU Max (screen off)</string>
+    <string name="cpufreq_min">CPU Min Speed</string>
+    <string name="cpufreq_boot">Boot CPU Speed:</string>
+    <string name="cpufreq_boot_info_title">Settings on boot</string>
+    <string name="cpufreq_boot_title_max">Max (screen on/off): </string>
+    <string name="cpufreq_boot_title_min">Min (idle): </string>
+    <string name="cpufreq_boot_title_default">Kernel default will be applied</string>
+    <string name="cpufreq_setboot_title">Apply On Boot</string>
+    <string name="cpufreq_setboot_summary">Apply current settings on next system boot</string>
+    <string name="cpufreq_notice_title">Notice after boot:</string>
+    <string name="cpufreq_notice_summary">CPU Speed is not applied until after the screen is allowed to turn off</string>
 </resources>

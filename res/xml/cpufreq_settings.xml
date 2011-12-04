@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * Note portions of this file are copied from SpareParts Part
+ * of the Android Open Source Project
+ *
+ * Copyright 2011, Terrence Ezrol (ezGingerbread Project)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/cpufreq_header">
+        <CheckBoxPreference
+            android:key="enable_cpufreq"
+            android:persistent="false"
+            android:title="@string/enable_cpufreq_title"
+            android:summary="@string/enable_cpufreq_summary" />
+        <Preference
+            android:key="reset_cpufreq"
+            android:title="@string/reset_cpufreq_title"
+            android:summary="@string/reset_cpufreq_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/cpufreq_current">
+        <ListPreference
+            android:key="cpufreq_maxwake_list"
+            android:title="@string/cpufreq_maxwake"
+            android:persistent="false"
+            android:dependency="enable_cpufreq" />
+        <ListPreference
+            android:key="cpufreq_maxsleep_list"
+            android:title="@string/cpufreq_maxsleep"
+            android:persistent="false"
+            android:dependency="enable_cpufreq" />
+        <ListPreference
+            android:key="cpufreq_min_list"
+            android:title="@string/cpufreq_min"
+            android:persistent="false"
+            android:dependency="enable_cpufreq" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/cpufreq_boot">
+        <Preference
+            android:key="cpufreq_boot_info"
+            android:title="@string/cpufreq_boot_info_title"
+            style="?android:preferenceInformationStyle" />
+        <Preference
+            android:key="cpufreq_setboot"
+            android:title="@string/cpufreq_setboot_title"
+            android:summary="@string/cpufreq_setboot_summary"
+            android:dependency="enable_cpufreq" />
+       <Preference
+            android:key="cpufreq_notice"
+            android:title="@string/cpufreq_notice_title"
+            android:summary="@string/cpufreq_notice_summary"
+            style="?android:preferenceInformationStyle" />
+    </PreferenceCategory>
+</PreferenceScreen>

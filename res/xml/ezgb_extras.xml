@@ -46,7 +46,15 @@
     </PreferenceCategory>
     <PreferenceCategory android:key="performance_settings_category"
         android:title="@string/perfctl_title">
-         <ListPreference
+         <PreferenceScreen
+            android:key="ui_cpufreq_menu"
+            android:title="@string/cpufreq_menu"
+            android:summary="@string/summary_cpufreq_menu">
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="name.devnull.ezgb.extras"
+                android:targetClass="name.devnull.ezgb.extras.activities.CpuFreqActivity" />
+        </PreferenceScreen>
+        <ListPreference
             android:key="persist_system_compcache"
             android:persistent="true"
             android:title="@string/title_compcache_size"
